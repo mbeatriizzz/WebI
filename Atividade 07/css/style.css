@@ -1,0 +1,376 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f2f5f7;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cabecalhoPrincipal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #fff;
+  padding: 20px 0;
+}
+
+.cabecalhoPrincipal-titulo {
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.cabecalhoPrincipal-titulo a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cabecalhoPrincipal-nav {
+  max-width: max-content;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.cabecalhoPrincipal-nav-link {
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #9799a6;
+  background-color: #fff;
+  text-decoration: none;
+  transition: 0.5s;
+  display: block;
+
+  border-bottom: 1px solid #9799a6;
+}
+
+.main-container {
+  padding: 0 5.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.conteudoPrincipal {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.subtitulo {
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.conteudoPrincipal-cursos {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 0 2.5rem;
+  align-items: center;
+}
+
+.conteudoPrincipal-cursos-link {
+  height: 100px;
+  background-color: #fff;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 2px 2px 2px #ccc;
+  max-width: max-content;
+}
+
+.conteudoPrincipal-cursos-link a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  width: 13rem;
+  height: 100%;
+  display: block;
+}
+
+.conteudoPrincipal-cursos-link:hover {
+  box-shadow: 4px 4px 4px #ccc;
+}
+
+.conteudoPrincipal-cursos-link a:before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 10px auto;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(even) a:before {
+  background: url(../img/background1.svg) no-repeat;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(odd) a:before {
+  background: url(../img/background2.svg) no-repeat;
+}
+
+.video-container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1.1rem;
+}
+
+.videoSobre-sobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+.videoSobre-sobre-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.videoSobre-button {
+  width: 110%;
+  margin-top: 5.4rem;
+}
+
+.rodapePrincipal {
+  background-color: #324c64;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rodapePrincipal .subtitulo {
+  color: #fff;
+}
+
+.rodapePrincipal-navMap {
+  display: flex;
+  flex-direction: column;
+}
+.rodapePrincipal-navMap > h3 {
+  padding-left: 7rem;
+}
+.rodapePrincipal-navMap-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0 2rem;
+}
+.cursos-list {
+  display: flex;
+  flex-direction: column;
+}
+.patrocinadores-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.rodapePrincipal-patrocinadores-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6.5rem;
+}
+
+.rodapePrincipal-navMap-link {
+  text-decoration: none;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.rodapePrincipal-navMap-link {
+  font-size: 0.9em;
+}
+
+.navmap-list-title {
+  font-weight: 700;
+  font-size: 1.3em;
+  margin: 0.9em 0;
+  padding-left: 0.3em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+
+.navmap-list-title + .rodapePrincipal-navMap-link {
+  margin-top: 0;
+}
+
+.navmap-list-title-bancoDeDados {
+  color: #ec6e5a;
+  border-left: 4px solid #ec6e5a;
+}
+.navmap-list-title-framework {
+  color: #ad85bf;
+  border-left: 4px solid #ad85bf;
+}
+.navmap-list-title-frontend {
+  color: #5ec6f3;
+  border-left: 4px solid #5ec6f3;
+}
+.navmap-list-title-backend {
+  color: #25d285;
+  border-left: 4px solid #25d285;
+}
+
+.rodapePrincipal-patrocinadores {
+  margin-top: 30px;
+  background: #f2f5f7;
+  padding: 20px 0;
+}
+
+.rodapePrincipal-contatoForm {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.rodapePrincipal-contatoForm label[for="email-contato"] {
+  font-weight: bold;
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.rodapePrincipal-contatoForm-emailInput {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 10px;
+}
+
+.rodapePrincipal-contatoForm-submit {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #4dba7a;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.62rem;
+}
+
+.rodapePrincipal-contatoForm-submit,
+.rodapePrincipal-contatoForm-emailInput {
+  outline: 0;
+  border: 1px solid #4dba7a;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.videoSobre {
+  background-color: #5e9edc;
+  padding: 25px 0;
+}
+
+.videoSobre-video {
+  max-width: 100%;
+}
+
+.videoSobre .container {
+  color: #fff;
+}
+
+.videoSobre-sobre-title {
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+.videoSobre-sobre {
+  font-size: 1.3em;
+  line-height: 2;
+}
+
+.videoSobre-button {
+  border-radius: 8px;
+  background-color: #ec6e5a;
+  display: block;
+  color: #fff;
+  border: none;
+  height: 50px;
+  font-size: 0.8em;
+  outline: none;
+}
+
+.rodapePrincipal-contatoForm-legend {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 769px) {
+  .container {
+    width: 85%;
+  }
+
+  .subtitulo {
+    text-align: left;
+  }
+
+  .cabecalhoPrincipal-nav-link {
+    border-radius: 5px;
+    border: 1px solid #9799a6;
+  }
+
+  .cabecalhoPrincipal-nav-link:hover {
+    color: #fff;
+    background-color: #9799a6;
+  }
+
+  .cabecalhoPrincipal-titulo {
+    margin: 0;
+  }
+
+  .cabecalhoPrincipal-nav {
+    width: auto;
+  }
+
+  .cabecalhoPrincipal-nav-link {
+    width: auto;
+    margin: 0 0 0 10px;
+  }
+
+  .rodapePrincipal-contatoForm {
+    margin-top: 0;
+    text-align: left;
+  }
+
+  .conteudoPrincipal-cursos-link:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .conteudoPrincipal-cursos-link:nth-child(3n + 1) {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .conteudoPrincipal-cursos-link {
+    margin: 1.333%;
+  }
+
+  .conteudoPrincipal-cursos-link:nth-child(3n) {
+    margin-right: 1.33%;
+  }
+
+  .conteudoPrincipal-cursos-link:nth-child(3n + 1) {
+    margin-left: 1.333%;
+  }
+
+  .conteudoPrincipal-cursos-link:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  .conteudoPrincipal-cursos-link:nth-child(4n + 1) {
+    margin-left: 0;
+  }
+
+  .videoSobre-sobre {
+    margin-left: 1.5em;
+  }
+}

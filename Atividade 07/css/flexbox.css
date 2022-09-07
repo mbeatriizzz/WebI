@@ -1,0 +1,74 @@
+
+
+@media(max-width: 650px) {
+	.cabecalhoPrincipal-nav {
+		flex-direction: column;
+	  }
+	
+	  .cabecalhoPrincipal .container {
+		flex-direction: column;
+		align-items: initial;
+		text-align: center;
+	  }
+
+	.cabecalhoPrincipal-nav-link {
+		padding: 0 7rem;
+	}
+
+	.subtitulo{
+		margin-top: 1rem;
+	}
+	.conteudoPrincipal-cursos {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 0.4rem ;
+		margin-bottom: 0.3rem;
+	}
+
+	.patrocinadores-container{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+	.video-container {
+		width: 55%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	  }
+
+	  .videoSobre-button {
+		width: 90%;
+		margin-top: 4rem;
+	  }
+
+	  .rodapePrincipal {
+		display: block;
+		height: fit-content;
+	  }
+
+	  .patrocinadores-container{
+		display: flex;
+		flex-direction: column;
+	  }
+
+	  img{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		width: 80%;
+	  }
+
+	  .rodapePrincipal-navMap-list{
+		display: block;		
+	  }
+	
+}
+
