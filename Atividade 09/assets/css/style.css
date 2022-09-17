@@ -1,0 +1,32 @@
+
+*{
+    padding: 0;
+    margin: 0;
+   }
+
+   .cabecalho{
+    grid-area: cabecalho;
+   }
+
+   .conteudo{
+    grid-area: conteudo;
+   }
+
+   .rodape{
+    grid-area: rodape;
+   }
+
+   body{
+    background: #f1f1f1;
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    'cabecalho cabecalho'
+    'conteudo conteudo'
+    'rodape rodape';
+
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+   }

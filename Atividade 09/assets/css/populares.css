@@ -1,0 +1,100 @@
+.populares__cabecalho{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(136, 136, 136, 0.664);
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    margin-left: 1.840rem;
+    margin-right: 1.840rem;
+}
+
+.populares__titulo , .populares__botao{
+    border: none;
+    margin-bottom: 0.3rem;
+    font-size: 15px;
+    color: rgb(65, 65, 65);
+}
+
+.populares__conteudo , .populares__card:nth-child(1) .populares__card___imagem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.populares__card___imagem{
+    display: grid;
+    width: 15rem;
+    height: 9rem;
+}
+
+.populares__card___corpo div{
+    background-color: white;
+    width: 15rem;
+}
+
+.populares__card___descricao{
+    display: grid;
+    height: 18rem;
+    font-size: 1rem;
+    color: rgb(65, 65, 65);
+    border-top: 0.4rem solid white;
+    text-align: justify;
+}
+
+.populares__card___data{
+    color: rgb(138, 137, 137);
+    font-size: 0.9rem;
+}
+
+.populares__card:nth-child(5) .populares__card___titulo, .populares__card:nth-child(4) .populares__card___titulo{
+    font-size: 1.490rem;;
+}
+
+.populares__card___descricao , .populares__card___cabecalho {
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+  }
+
+.populares__card___titulo{
+    display: grid;
+    color: #282929;
+    font-size: 1.600rem;
+    font-weight: bolder;
+}
+
+.rodape{
+    width: 100%;
+    height: 2rem;
+    background-color: white;
+    text-align: center;
+    color: #282929;
+    font-weight: lighter;
+    margin-top: 2rem;
+
+}
+
+p{
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 769px) {
+    .populares__conteudo , .populares__card:nth-child(1) .populares__card___imagem{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .populares__titulo , .populares__botao{
+        font-size: 10px;
+    }
+
+    .rodape{
+        height: 1rem;
+        font-size: 12px;
+    }
+    
+    .populares__itens:nth-child(1) .populares__cabecalho , .populares__itens:nth-child(1) .populares__botao{
+        margin-top: 15rem;
+    }
+}

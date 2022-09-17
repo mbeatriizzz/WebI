@@ -1,0 +1,33 @@
+.menu__link{
+    font-size: 1.390rem;
+    text-decoration: none;
+    box-shadow: none;
+    color: black;
+}
+
+a:hover{
+     border-bottom: 3px solid blue;
+}
+
+.menu__item{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: fit-content;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-left: 1.840rem;
+}
+
+@media (max-width: 769px) {
+    .menu__item{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 25%;
+    }
+
+    .menu__link{
+        border-bottom: 1px solid rgba(73, 73, 73, 0.514);
+    }
+}

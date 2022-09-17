@@ -1,0 +1,125 @@
+.caixa {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.destaques {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1.840rem;
+  
+    display: grid;
+    grid-gap: 0.3rem;
+    grid-template-columns: 32% 32% 24%;
+    grid-auto-flow: 33.33% 33.33% 33.33%;
+    height: calc(100vh - 30px);
+    width: 90%;
+
+}
+
+.destaques__titulo{
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 0.6rem;
+    text-align: center;
+    width: 100%;
+}
+
+.destaques__principal{
+    background-image:  url('../img/fortnite.jpg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 27rem;
+    
+}
+
+.destaques__secundario:nth-child(2) {
+    background-image: url('../img/pubg.jpg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    width: 31.22rem;
+}
+
+.destaques__secundario:nth-child(3) {
+    background: url('../img/slack.png') ;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    width: 31.22rem;
+   
+}
+
+.destaques__secundario:nth-child(4) {
+    background: url('../img/whatsapp.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    
+}
+
+.destaques__secundario:nth-child(5) {
+    background: url('../img/cs-go.jpg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    height: 12rem;
+}
+
+.destaques__categorias___lista{
+    display: grid;
+    grid-template-columns: 60% 55%;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.destaques__categorias___item{
+    display: grid;
+    border: 1px solid gray;
+    padding: 1rem;
+    text-align: center;
+}
+
+.destaques__categorias___link{
+    text-decoration: none;
+    text-shadow: none;
+    color: black;
+}
+
+@media (max-width: 769px) {
+    .destaques{
+        display: block;
+    }
+
+    .caixa {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .destaques__categorias___lista{
+        display: grid;
+        width: 100%;
+        grid-template-columns: none;
+        grid-template-rows: none;
+        gap: 2px;
+       
+    }
+    
+    .destaques__categorias___item{
+        display: grid;
+        border: 1px solid gray;
+        padding: 1rem;
+        text-align: center;
+    }
+    
+
+}
