@@ -1,125 +1,117 @@
-.caixa {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+.destaques{
+    display: grid;
+    grid-template-columns: 45% 30% auto;
+    grid-template-rows: 40% 40% 40%;
+    height: 107vh;
+    padding: 15px;
+    gap: 0.5rem;
+
+    margin-top: 1rem;
+    margin-bottom: 14rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 
-.destaques {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 1.840rem;
-  
-    display: grid;
-    grid-gap: 0.3rem;
-    grid-template-columns: 32% 32% 24%;
-    grid-auto-flow: 33.33% 33.33% 33.33%;
-    height: calc(100vh - 30px);
-    width: 90%;
-
+.destaques div{
+    padding: 20px;
 }
 
 .destaques__titulo{
+    height: 8vh;
+    text-align: center;
     background: rgba(0, 0, 0, 0.5);
     color: white;
-    padding: 0.6rem;
-    text-align: center;
-    width: 100%;
+
+    margin-bottom: -1.250rem;
+    margin-left: -1.3rem;
 }
 
-.destaques__principal{
-    background-image:  url('../img/fortnite.jpg');
+.destaques__principal_caixa .destaques__titulo{
+    width: 104.3%;
+}
+
+.caixa:nth-child(5) .destaques__titulo{
+    width: 111.5%;
+}
+
+.caixa:nth-child(4) .destaques__titulo , .destaques__principal_caixa+ .caixa .destaques__titulo , .caixa:nth-child(3) .destaques__titulo{
+    width: 115%;
+}
+
+.destaques__titulo > p{
+    margin-top: 1rem;
+}
+
+.destaques__principal_caixa{
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    background-image:  url('../img/fortnite.png');
     background-repeat: no-repeat;
     background-position-x: center;
     background-size: cover;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    height: 27rem;
-    
+    align-items: end;
 }
 
-.destaques__secundario:nth-child(2) {
+.caixa{
+    display: grid;
+    align-items: end;
+}
+
+.caixa:nth-child(2){
     background-image: url('../img/pubg.jpg');
     background-repeat: no-repeat;
     background-position-x: center;
     background-size: cover;
-    width: 31.22rem;
 }
 
-.destaques__secundario:nth-child(3) {
+.caixa:nth-child(3){
     background: url('../img/slack.png') ;
     background-repeat: no-repeat;
     background-position-x: center;
     background-size: cover;
-    width: 31.22rem;
-   
 }
 
-.destaques__secundario:nth-child(4) {
+.caixa:nth-child(4){
+    grid-row: 3;
+    grid-column: 3;
     background: url('../img/whatsapp.png');
     background-repeat: no-repeat;
     background-position-x: center;
     background-size: cover;
-    
 }
 
-.destaques__secundario:nth-child(5) {
+.caixa:nth-child(5){
     background: url('../img/cs-go.jpg');
     background-repeat: no-repeat;
     background-position-x: center;
     background-size: cover;
-    height: 12rem;
+}
+
+.destaques__categorias{
+    display: grid;
+    grid-column: 1;
+    grid-row: 3;
+    margin: -1.3rem;
 }
 
 .destaques__categorias___lista{
     display: grid;
-    grid-template-columns: 60% 55%;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    gap: 0.2rem;
 }
 
 .destaques__categorias___item{
-    display: grid;
-    border: 1px solid gray;
-    padding: 1rem;
     text-align: center;
+    border: 2px solid rgba(177, 177, 177, 0.397);
 }
 
 .destaques__categorias___link{
     text-decoration: none;
-    text-shadow: none;
-    color: black;
-}
-
-@media (max-width: 769px) {
-    .destaques{
-        display: block;
-    }
-
-    .caixa {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    }
-
-    .destaques__categorias___lista{
-        display: grid;
-        width: 100%;
-        grid-template-columns: none;
-        grid-template-rows: none;
-        gap: 2px;
-       
-    }
-    
-    .destaques__categorias___item{
-        display: grid;
-        border: 1px solid gray;
-        padding: 1rem;
-        text-align: center;
-    }
-    
-
+    box-shadow: none;
+    color: #282929;
 }

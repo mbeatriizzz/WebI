@@ -34,7 +34,7 @@
 
 .populares__card___descricao{
     display: grid;
-    height: 18rem;
+    height: 13rem;
     font-size: 1rem;
     color: rgb(65, 65, 65);
     border-top: 0.4rem solid white;
@@ -75,26 +75,4 @@
 
 p{
     margin-top: 0.5rem;
-}
-
-@media (max-width: 769px) {
-    .populares__conteudo , .populares__card:nth-child(1) .populares__card___imagem{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .populares__titulo , .populares__botao{
-        font-size: 10px;
-    }
-
-    .rodape{
-        height: 1rem;
-        font-size: 12px;
-    }
-    
-    .populares__itens:nth-child(1) .populares__cabecalho , .populares__itens:nth-child(1) .populares__botao{
-        margin-top: 15rem;
-    }
 }
