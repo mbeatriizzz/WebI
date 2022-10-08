@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Questão 03</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var valor_compra = Number(prompt("Valor da compra: "))
+		if (valor_compra/20 < 6) {
+			var quantidade_parcelas = Math.floor(valor_compra/20)
+			
+			if (valor_compra <= 20) {
+			alert("o valor só pode ser pago em 1x")
+			}
+			else{
+				alert("o maximo que pode ser parcelado é " + quantidade_parcelas + "x de R$ " + valor_compra/quantidade_parcelas)
+			}
+		}
+		else{
+
+			alert("o produto vai ser dividido em 6x de " + valor_compra/6)
+		}
+	</script>
+
+</body>
+</html>

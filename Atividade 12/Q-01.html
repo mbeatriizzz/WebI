@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Questão 01</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+	var contador = 0
+	var quantidade_numeros = 10
+
+	while (contador < 10) {
+		const numero = Number(prompt("Digite um  numero: "))
+
+		if (numero > 20 || numero < 10) {
+			quantidade_numeros = quantidade_numeros - 1
+		}
+
+		contador = contador + 1;
+}
+
+alert("foram " + quantidade_numeros + " numeros no intervalo digitados")
+
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Questão 02</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+	var opcao = ""
+	var valor_total = 0
+
+while (opcao != "n") {
+  var valor_produto = Number(prompt("Digite o valor do produto: "))
+  valor_total = valor_total + valor_produto
+
+  opcao = prompt("digite 's' para continuar e 'n' para não: ")
+}
+
+var valor_pago = Number(prompt("Valor pago: "))
+var troco = valor_pago - valor_total
+
+alert("o total dos itens e " + valor_total + "\n o valor pago foi " + valor_pago + "\n o valor do troco " + troco)
+
+</script>
+</body>
+</html>
