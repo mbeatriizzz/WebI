@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 03</title>
+</head>
+<body>
+  <script>
+    var temperatura = [] 
+    var maior = 0
+    var menor 
+    var media = 0
+    var a = 0
+    var quantidade = 0
+
+    for( a = 0; a < 7; a++){
+        temperatura [a] = Number (prompt ('Digite a temperatura do dia'))
+        
+        if (temperatura[a] > maior){
+            maior = temperatura[a]
+        }
+        else if (temperatura[a] < menor){
+            menor = temperatura[a]
+        }
+        media = media + temperatura[a]
+    }
+
+    media = media/7
+
+    for (a = 1; a < 7; a++){
+        if(temperatura[a] < media){
+            quantidade = quantidade + 1
+        }
+    }
+    alert('Menor temperatura da semana: ' + Math.min(...temperatura))
+    alert('Maior temperatura do semana: ' + Math.max(...temperatura))
+    alert('Temperatura média semana: '+ media)
+  </script>
+</body>
+</html>
